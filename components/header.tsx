@@ -14,7 +14,7 @@ export default function Header() {
       <header className="px-4 lg:px-6 h-14 flex items-center border-b">
         <Link className="flex items-center justify-center" href="#">
           <span className="sr-only"></span>
-          <span className="font-bold text-xl">Ayşegül'ün Atölyesi</span>
+          <span className="font-bold text-xl">Ayşegülün Atölyesi</span>
         </Link>
         <nav className="ml-auto items-center hidden md:flex">
           <Link
