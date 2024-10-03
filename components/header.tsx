@@ -59,7 +59,7 @@ export default function Header() {
         <nav className="flex flex-col items-center py-4 bg-background border-b md:hidden">
           <Link
             className="text-sm font-medium hover:underline underline-offset-4 my-2"
-            href="#about"
+            href="/about"
             onClick={() => setIsMenuOpen(false)}
           >
             About
