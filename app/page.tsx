@@ -6,11 +6,16 @@ import { Button } from "@/components/ui/button";
 import { ThemeProvider } from "@/components/theme-provider";
 import Component from "@/components/product-card";
 
-// Sample data generation function
 const generateSampleProducts = (count: number) => {
   return Array.from({ length: count }, (_, i) => ({
     id: i + 1,
-    imageUrl: `/placeholder.svg?height=200&width=200&text=Product ${i + 1}`,
+    images: [
+      `/images/test2.jpeg`,
+      `/images/test3.jpg`,
+      `/images/test4.jpg`,
+      `/images/test5.jpg`,
+      `/images/test2.jpeg`,
+    ],
     name: `Product ${i + 1}`,
     description: `This is a short description for Product ${
       i + 1
@@ -54,7 +59,7 @@ export default function HomePage() {
           {currentProducts.map((product) => (
             <Component
               key={product.id}
-              imageUrl="/images/test2.jpeg"
+              images={product.images}
               name={product.name}
               description={product.description}
               price={product.price}
